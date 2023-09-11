@@ -1,0 +1,32 @@
+.dropdown {
+    /* width: 20
+    ; */
+    /* background-color: red; */
+    position: relative;
+}
+.list {
+    background-color: white;
+    color: black;
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+}
+.dropdown-content {
+    /* width: 100%; */
+    position: absolute;
+    /* right: 0; */
+}
+
+.drop-right {
+    right: 0;
+}
+.drop-left {
+    left: 0;
+}
+.drop-center {
+    left: 50%;
+    translate: -50%;
+}
+.d-none {
+    display: none;
+}
