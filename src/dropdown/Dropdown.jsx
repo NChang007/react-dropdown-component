@@ -1,6 +1,7 @@
 import React from 'react'
 import './dropdown.css'
 
+// function to toggle the d-none class on the dropdown content div
 const toggleDropdown = (id) => {
     let dropdownContent = document.getElementById('dropdown-content'+ id)
     dropdownContent.classList.toggle('d-none')
