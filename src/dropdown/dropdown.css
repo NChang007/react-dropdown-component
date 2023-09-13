@@ -1,7 +1,4 @@
 .dropdown {
-    /* width: 20
-    ; */
-    /* background-color: red; */
     position: relative;
 }
 .list {
@@ -12,9 +9,7 @@
     padding: 0;    
 }
 .dropdown-content {
-    /* width: 100%; */
     position: absolute;
-    /* right: 0; */
 }
 
 .drop-right {
