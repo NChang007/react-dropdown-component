@@ -6,6 +6,17 @@ const toggleDropdown = (id) => {
     let dropdownContent = document.getElementById('dropdown-content'+ id)
     dropdownContent.classList.toggle('d-none')
 }
+
+const DropdownList = ({children}) => {
+    return (
+        <ul className='list'>
+            {children}
+            <li>About</li>
+            <li>Content is way too bi asdasdasdadsg</li>
+            <li className='disabled'>Disabled</li>
+        </ul>
+    )
+}
 const Dropdown = ({children, id, position, width}) => {
   return (
     <div className='dropdown'>
@@ -26,12 +37,8 @@ const Dropdown = ({children, id, position, width}) => {
                 // left: `${position === 'left' ? '0' : ''}`, 
             }}
         >
-            {/* dp content can be just text, a list with Items. just let them choose what they add here */}
-            <ul className='list'>
-                <li>About</li>
-                <li>Content is way too bi asdasdasdadsg</li>
-                <li className='disabled'>Disabled</li>
-            </ul>
+         
+            
         </div>
     </div>
   )
