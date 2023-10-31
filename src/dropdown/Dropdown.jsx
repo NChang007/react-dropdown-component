@@ -6,7 +6,11 @@ const toggleDropdown = (id) => {
     let dropdownContent = document.getElementById('dropdown-content'+ id)
     dropdownContent.classList.toggle('d-none')
 }
-
+const DropdownTitle = ({title}) => {
+    return (
+        <p role='title' className='dropdown-title'>{title}</p>
+    )
+}
 const DropdownList = ({children}) => {
     return (
         <ul className='list'>
