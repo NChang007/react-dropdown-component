@@ -8,7 +8,12 @@ const toggleDropdown = (id) => {
 }
 const DropdownTitle = ({title}) => {
     return (
-        <p role='title' className='dropdown-title'>{title}</p>
+        <li role='title' className='dropdown-title'>{title}</li>
+    )
+}
+const DropdownItem = ({children}) => {
+    return (
+        <li className='dropdown-item'>{children}</li>
     )
 }
 const DropdownList = ({children}) => {
