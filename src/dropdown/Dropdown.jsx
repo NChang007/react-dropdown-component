@@ -58,4 +58,9 @@ Dropdown.defaultProps = {
     width: '100%'
 }
 
+
+Dropdown.Title = DropdownTitle
+Dropdown.Item = DropdownItem
+Dropdown.List = DropdownList
+
 export default Dropdown
