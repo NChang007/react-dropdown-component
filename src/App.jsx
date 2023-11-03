@@ -7,6 +7,7 @@ import Dropdown from './dropdown/Dropdown'
 function App() {
   const [count, setCount] = useState(0)
 
+  let characters = ['Batman', 'Fidel', 'Naruto']
   return (
     <>
       <div style={{display: 'flex', justifyContent: 'center', width: '100%', flexShrink: '0'}}>
@@ -14,6 +15,10 @@ function App() {
         <Dropdown>
         {/* trigger / btn */}
         {/* actual dropdown info */}
+        <Dropdown.Title>Characters</Dropdown.Title>
+        {characters.map((item, idx) => (
+          <Dropdown.Item key={idx}>{item}</Dropdown.Item>
+        ))}
         </Dropdown>
       </div>
       
