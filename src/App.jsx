@@ -13,12 +13,12 @@ function App() {
       <div style={{display: 'flex', justifyContent: 'center', width: '100%', flexShrink: '0'}}>
         <h1>some nice title</h1>
         <Dropdown>
-        {/* trigger / btn */}
-        {/* actual dropdown info */}
-        <Dropdown.Title>Characters</Dropdown.Title>
-        {characters.map((item, idx) => (
-          <Dropdown.Item key={idx}>{item}</Dropdown.Item>
-        ))}
+          <Dropdown.Title>Characters</Dropdown.Title>
+          <Dropdown.List>
+            {characters.map((item, idx) => (
+              <Dropdown.Item key={idx}>{item}</Dropdown.Item>
+            ))}
+          </Dropdown.List>
         </Dropdown>
       </div>
       
