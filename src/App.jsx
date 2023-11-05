@@ -5,9 +5,8 @@ import './App.css'
 import Dropdown from './dropdown/Dropdown'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   let characters = ['Batman', 'Fidel', 'Naruto']
+
   return (
     <>
       <div style={{display: 'flex', justifyContent: 'center', width: '100%', flexShrink: '0'}}>
@@ -17,6 +16,13 @@ function App() {
           <Dropdown.List>
             {characters.map((item, idx) => (
               <Dropdown.Item key={idx}>{item}</Dropdown.Item>
+            ))}
+          </Dropdown.List>
+        </Dropdown>
+        <Dropdown>
+          <Dropdown.List>
+            {characters.map((item, idx) => (
+              <Dropdown.Item key={idx}>{item} <button>del</button></Dropdown.Item>
             ))}
           </Dropdown.List>
         </Dropdown>
