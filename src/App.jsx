@@ -11,6 +11,9 @@ function App() {
     <>
       <div style={{display: 'flex', justifyContent: 'center', width: '100%', flexShrink: '0'}}>
         <h1>some nice title</h1>
+        {/* Dropdown has a list -> Dropdown.List */}
+        {/* Dropdown has a item -> Dropdown.Item */}
+        {/* Dropdown has a title -> Dropdown.Title */}
         <Dropdown>
           <Dropdown.Title>Characters</Dropdown.Title>
           <Dropdown.List>
